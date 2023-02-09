@@ -8,7 +8,7 @@
 
             <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-            <link rel="stylesheet" href="../css/layout.css">
+            <link rel="stylesheet" href="../css/home-page-layout.css">
             <link rel="stylesheet" href="../css/font.css">
     </head>
     <body>
@@ -16,27 +16,23 @@
             <nav>
                 <!--Heading navigation list-->
                 <ul>
-                    <li><a href="home-page.html">Home</a></li>
+                    <li class="current"><a href="home-page.html">Home</a></li>
                     <li><a href="project.html">Project</a></li>
                     <li><a href="volunteer.html">Volunteer</a></li>
                     <li><a href="photo.html">Photo album</a></li>
                 </ul>
             </nav>
             <hr />
-        </header>
-        <h1>Angus Wong</h1>
-        <secton id="about">
-            <div class="row section-intro">
-                <div class="col-twelve">
-                    <h5>About</h5>
-                    <h1>Let me introduce myself.</h1>
-                    <div class="intro-info">
-                        <img src="../pics/personal_pics.jpg" alt="Profile Picture">
-
-                        <p class="lead">I'm a year 3 computing science from Simon Fraser University. </p>
-                    </div>
-                </div>
+            <div id="info">
+                <h1 class="name">Angus Wong</h1>
+                <h3 class="description"><span>Computing Science Student</span></h3>
+                <h3 class="description"><span>Background pics: Whistler, Canada by Angus Wong</span></h3>
+                <ul id="info">
+                    <li class="icon"><a href="https://github.com/angus350"><img src="../pics/github-mark-white.png" alt="GitHub icon"></a></li>
+                    <li class="icon"><a href="mailto:anguswong1225@gmail.com"><img src="../pics/mail.png" alt="Mail icon"></a></li>
+                </ul>
             </div>
-        </secton>
+            <a href ="about.html"><button>Learn more about me!</button></a>
+        </header>
     </body>
 </html>
