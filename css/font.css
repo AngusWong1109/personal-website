@@ -1,11 +1,12 @@
-#info
-h1 .name{
+h1.name{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:72px;
     color: white;
     line-height: 1.25;
     margin-bottom: 1.2rem;
+    text-shadow: 2px 2px 4px black;
 }
-h3 .description{
+h3.description{
     font-family: 'Times New Roman', Times, serif;
     color: white;
 }
