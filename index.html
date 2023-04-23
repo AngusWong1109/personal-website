@@ -30,6 +30,10 @@
                 <span id="colon">:</span>
                 <span id="mins"></span>
             </div>
+            <div class = "clock">
+                <span id="date"></span>, 
+                <span id="dayNumber"></span>
+            </div>
 
             <h1 class="name">Angus Wong</h1>
             <h3 class="description"><span>Simon Fraser University | Computing Science Student</span></h3>
@@ -44,24 +48,56 @@
         </header>
         <script>
             function startTime() {
-                console.log('start time called');
                 const today = new Date();
-                let h = today.getHours();
-                let m = today.getMinutes();
-                m = checkTime(m);
-                document.getElementById('hour').innerHTML = h;
-                document.getElementById('mins').innerHTML = m;
+                let hour = today.getHours();
+                let mins = today.getMinutes();
+                let date = today.getDate();
+                let month = today.getMonth() + 1;
+                let year = today.getFullYear();
+                let dayNumber = today.getDay();
+                hour = addLeadingZero(hour);
+                mins = addLeadingZero(mins);
+                date = addLeadingZero(date);
+                month = addLeadingZero(month);
+                dayNumber = changeDayNumber(dayNumber);
+                document.getElementById('hour').innerHTML = hour;
+                document.getElementById('mins').innerHTML = mins;
+                document.getElementById('date').innerHTML = month + "/" + date + "/" + year;
+                document.getElementById('dayNumber').innerHTML = dayNumber;
                 setTimeout(startTime, 1000);
             }
               
             
-            function checkTime(i) {
+            function addLeadingZero(i) {
               if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
               return i;
             }
-
-            function checkDate(i){
-                
+            
+            function changeDayNumber(day){
+                switch (day) {
+                    case 0:
+                        day = "Sunday";
+                        break;
+                    case 1:
+                        day = "Monday";
+                        break;
+                    case 2:
+                        day = "Tuesday";
+                        break;
+                    case 3:
+                        day = "Wednesday";
+                        break;
+                    case 4:
+                        day = "Thrusday";
+                        break;
+                    case 5:
+                        day = "Friday";
+                        break;
+                    case 6:
+                        day = "Saturday";
+                        break;
+                }
+                return day;
             }
         </script>
     </body>
