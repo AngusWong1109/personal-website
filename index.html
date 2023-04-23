@@ -12,7 +12,7 @@
             <link rel="stylesheet" href="css/font.css">
             <link rel="stylesheet" href="css/navbar.css">
     </head>
-    <body>
+    <body onload="startTime()">
         <header>
             <!--Heading navigation list-->
             <nav>
@@ -25,18 +25,44 @@
                 </ul>
             </nav>
             <hr />
-            <div>
-                <h1 class="name">Angus Wong</h1>
-                <h3 class="description"><span>Computing Science Student</span></h3>
-                <h3 class="description"><span>Background pics: Whistler, Canada by Angus Wong</span></h3>
-                <ul class="social">
-                    <li><a href="https://github.com/angus350"><i class="fa fa-github" style="font-size:48px"></i></a></li>
-                    <li><a href="mailto:anguswong1225@gmail.com"><i class="fa fa-envelope" style="font-size:48px"></i></a></li>
-                    <li><a href="https://www.instagram.com/angus_350/"><i class="fa fa-instagram" style="font-size:48px"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/anguswong1109"><i class="fa fa-linkedin" style="font-size:48px"></i></a></li>
-                </ul>
+            <div class = "clock">
+                <span id="hour"></span>
+                <span id="colon">:</span>
+                <span id="mins"></span>
             </div>
-            <a href ="about.php"><button class="btn_learnMoreAboutMe">Learn more about me!</button></a>
+
+            <h1 class="name">Angus Wong</h1>
+            <h3 class="description"><span>Simon Fraser University | Computing Science Student</span></h3>
+            <h3 class="description"><span>Background pics: Whistler, Canada by Angus Wong</span></h3>
+            <ul class="social">
+                <li><a href="https://github.com/angus350"><i class="fa fa-github" style="font-size:48px"></i></a></li>
+                <li><a href="mailto:anguswong1225@gmail.com"><i class="fa fa-envelope" style="font-size:48px"></i></a></li>
+                <li><a href="https://www.instagram.com/angus_350/"><i class="fa fa-instagram" style="font-size:48px"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/anguswong1109"><i class="fa fa-linkedin" style="font-size:48px"></i></a></li>
+            </ul>            
+            <a href ="about.html"><button class="btn_learnMoreAboutMe">Learn more about me!</button></a>
         </header>
+        <script>
+            function startTime() {
+                console.log('start time called');
+                const today = new Date();
+                let h = today.getHours();
+                let m = today.getMinutes();
+                m = checkTime(m);
+                document.getElementById('hour').innerHTML = h;
+                document.getElementById('mins').innerHTML = m;
+                setTimeout(startTime, 1000);
+            }
+              
+            
+            function checkTime(i) {
+              if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+              return i;
+            }
+
+            function checkDate(i){
+                
+            }
+        </script>
     </body>
 </html>

@@ -2,3 +2,23 @@ section{
     display: -webkit-flex;
     display: flex;
 }
+
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.profile{
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-color: lightblue;
+    padding: 20px;
+}
+.profile img{
+    border-radius: 50%;
+    width: 200px;
+}
