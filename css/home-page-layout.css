@@ -27,7 +27,7 @@ body{
 }
 
 .clock #colon{
-    animation: blinker 2s linear infinite;
+    animation: blinker 1s linear infinite;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }

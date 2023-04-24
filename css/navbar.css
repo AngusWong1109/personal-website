@@ -32,3 +32,4 @@ ul.navbar li a{
 	    transition: color .2s ease-in-out;
 }
 ul.navbar li a:hover { -webkit-text-fill-color:lightsalmon; }
+.current { -webkit-text-fill-color:lightsalmon; }

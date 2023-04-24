@@ -1,18 +1,12 @@
-section{
-    display: -webkit-flex;
-    display: flex;
-}
-
 .profile_pics{
     border-radius: 50%;
     width: 200px;
-    align-items: center;
-
+    padding-left: 20px;
 }
 
 .sidebar{
     height: 100%;
-    width: 210px;
+    width: 220px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -23,11 +17,48 @@ section{
 }
 
 .main_content{
-    margin-left: 210px;
-    font-size: 28px;
+    margin-left: 220px;
     padding: 0px 10px;
 }
 
 @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+  
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+  
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 16px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
   }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
