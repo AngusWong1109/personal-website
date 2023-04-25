@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/project-page.css">
+        <link rel="stylesheet" href="css/font.css">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@100&display=swap');
         </style>
@@ -30,28 +31,90 @@
             <ul class="cards_container">
                 <li>
                     <div class="card">
-                        <div class="card_title">Poker analyzer</div>
-                        <div class="container">
-                            <img src="pics/poker_analyzer_bg.jpg">
+                        <div class="card_face card_face--front">
+                            <div class="card_title">
+                                Poker analyzer
+                            </div>
+                            <div class="container">
+                                <img src="pics/poker_analyzer_bg.jpg">
+                            </div>
+                        </div>
+                        <div class="card_face card_face--back">
+                            <div class="card_description">
+                                Tak Sun Secondary School<br>
+                                May. 2019 - Oct. 2020
+                                <dl>
+                                    <dd>
+                                        Used C language to design a card analyzer that works to analyze the pattern of a given hand for show-hand card game and to determine the winner by the given hand of cards and betting amount
+                                    </dd>
+                                </dl>
+                            </div>
                         </div>
                     </div>
+                    <br>
+                    <a class = "link" href="https://github.com/AngusWong1109/Poker-Analysis/tree/master/C_version">Link to Code</a>
                 </li>
                 <li>
                     <div class="card">
-                        <div class="card_title">Find the missing plane</div>
-                        <div class="container">
-                            <img src="pics/missing_plane_bg.png">
+                        <div class="card_face card_face--front">
+                            <div class="card_title">
+                                Find the missing plane
+                            </div>
+                            <div class="container">
+                                <img src="pics/missing_plane_bg.png">
+                            </div>
+                        </div>
+                        <div class="card_face card_face--back">
+                            <div class="card_description">
+                                Simon Fraser University<br>
+                                Sep. 2022
+                                <dl>
+                                    <dd>
+                                        Used Java to design a score tracking application based on the board game, Lost Cities, which calculate and track the user score. It allows the user to add, display, edit and delete game record with provided android UI.
+                                    </dd>
+                                    <br>
+                                    <dd>
+                                        Used JUnit 5 to run test code by obtaining unit test and system test.
+                                    </dd>
+                                </dl>
+                            </div>
                         </div>
                     </div>
+                    <br>
+                    <a class = "link" href="https://github.com/AngusWong1109/Find-the-missing-plane">Link to Code</a>
                 </li>
                 <li>
                     <div class="card">
-                        <div class="card_title">Party game record system</div>
-                        <div class="container">
-                            <img src="pics/board_game_bg.jpg">
+                        <div class="card_face card_face--front">
+                            <div class="card_title">Party game record system</div>
+                            <div class="container">
+                                <img src="pics/board_game_bg.jpg">
+                            </div>
+                        </div>
+                        <div class="card_face card_face--back">
+                            <div class="card_description">
+                                Simon Fraser University<br>
+                                Oct. 2022 - Dec. 2022
+                                <dl>
+                                    <dd>
+                                        Used Java to design a score system to store group players’ score, it will generate an achievement level according to the total group scores, scaling by “good score” and “bad score” provided by user. It can also store image for each game played and each game type.
+                                    </dd>
+                                </dl>
+                            </div>
                         </div>
                     </div>
+                    <br>
+                    <a class = "link" href="https://github.com/AngusWong1109/Board-Game-Score-Calculator/settings">Link to Code</a>
                 </li>
             </ul>
+            
+            <script>
+                var cards = document.querySelectorAll('.card'); 
+                [...cards].forEach((card)=>{
+                    card.addEventListener( 'click', function() {
+                        card.classList.toggle('is-flipped');
+                    });
+                });
+            </script>
     </body>
 </html>

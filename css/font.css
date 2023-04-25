@@ -10,3 +10,27 @@ h3.description{
     font-family: 'Times New Roman', Times, serif;
     color: white;
 }
+
+.align_left{
+    float: left;
+}
+.align_right{
+    float: right;
+}
+
+.card_title{
+    font-size: 24px;
+}
+.card_description{
+    font-size: 16px;
+    text-align: left;
+}
+
+.section_title{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.link{
+    color: blue;
+}

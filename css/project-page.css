@@ -1,10 +1,35 @@
 .card {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
     border-radius: 5px;
+    font-family: 'Indie Flower', cursive;
     text-align: center;
     width: 300px;
     height: 350px;
+    cursor: pointer;
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 1s;
+}
+
+.card.is-flipped{
+    transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card_face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    backface-visibility: hidden;
+}
+  
+.card_face--front {
+    background: white;
+}
+  
+.card_face--back {
+    transform: rotateY(180deg);
 }
 
 .container {
@@ -22,25 +47,21 @@
 }
 
 ul.cards_container{
-    text-align: center;
+    text-align: justify;
     list-style: none;
-    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
 
+ul.cards_container:after{
+    content: "";
+    width: 100%;
+    display: inline-block;
 }
 
 ul.cards_container li{
     align-content: center;
     display:inline-block;
     list-style: none;
-    padding-left: 50px;
 }
 
-.section_title{
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-}
-
-.card_title{
-    font-family: 'Indie Flower', cursive;
-    font-size: 24px;
-}

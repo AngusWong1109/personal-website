@@ -31,5 +31,17 @@ ul.navbar li a{
 	    -ms-transition: color .2s ease-in-out;
 	    transition: color .2s ease-in-out;
 }
-ul.navbar li a:hover { -webkit-text-fill-color:lightsalmon; }
-.current { -webkit-text-fill-color:lightsalmon; }
+ul.navbar li a:after{
+    content: "";
+    position: absolute;
+    background-color: green;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+ul.navbar li a:hover:after { 
+    width: 100%
+}
+.current { -webkit-text-fill-color:green; }
