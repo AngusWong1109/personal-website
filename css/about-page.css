@@ -21,7 +21,7 @@ footer {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: lightblue;
+    background-color: #89D1FE;
     overflow-x: hidden;
     padding-top: 20px;
 }
@@ -48,7 +48,7 @@ footer {
     transition: 0.4s;
 }
   
-.active, .accordion:hover {
+.accordion:hover {
     background-color: #ccc;
 }
   
@@ -88,7 +88,7 @@ ul.info li{
     padding-left: 5px;
 }
 
-ul.info li a.link{
+.link{
     color: blue;
 }
 
