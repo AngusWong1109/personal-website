@@ -6,6 +6,9 @@
         <meta name="author" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/font.css">
+        <link rel="stylesheet" href="css/volunteer-page.css">
+        
     </head>
     <body>
         <header>
@@ -20,8 +23,114 @@
                 </ul>
             </nav>
             <hr />
-
-            <h1>Under maintenance</h1>
         </header>
+
+        <h1 class="section_title">Volunteer Experience</h1>
+
+        <div class="volunteer_title">Assistant</div>
+        <p class="align_left">Tak Sun Secondary School Visual & Audio Team</p>
+        <p class="align_right">Mar.2018 - May. 2020</p>
+        <div style="clear: both;"></div>
+        <ul>
+            <li>Recorded video for different school event, controlling different equipment through the activities, such as microphone, light, etc.</li>
+        </ul>
+        <br>
+        <div class="volunteer_title">President of Aviation Club</div>
+        <p class="align_left">Tak Sun Secondary School Aviation Club</p>
+        <p class="align_right">Mar.2019 - May. 2020</p>
+        <div style="clear: both;"></div>
+        <ul>
+            <li>Guided other members to plan on holding activities. Helped and suggested different solution for members that have difficulties while they were planning the activities.</li>
+            <li>Have lead the members to different activities, included ramp visiting, private pilot sharing, Co-curriculum day, etc.</li>
+        </ul>
+        
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="pics/slideshow_image/7e5eb74d-23d7-4375-8702-3c351f898682.JPG" style="width:100%">
+                <div class="text">A private pilot have made a talk and share his flying experience!</div>
+            </div>
+  
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="pics/slideshow_image/aviation_academy.jpg" style="width:100%">
+                <div class="text">The day that we went to visit the aviation academy, and learn about procedure how Hong Kong International Airport works!</div>
+            </div>
+  
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="pics/slideshow_image/co-curriculum_day.jpg" style="width:100%">
+                <div class="text">The co-currculum day!</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="pics/slideshow_image/IMG_0672.JPG" style="width:100%">
+                <div class="text">Group photo of the ramp visiting day!</div>
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="pics/slideshow_image/IMG_0728.jpg" style="width:100%">
+                <div class="text">The ramp visiting. We saw a lot of large airplane taxi besides us!</div>
+            </div>
+  
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <br>
+        <div class="volunteer_title">Program Assistant</div>
+        <p class="align_left">Tak Sun Secondary School</p>
+        <p class="align_right">Jun. 2018</p>
+        <div style="clear: both;"></div>
+        <ul>
+            <li>Coordinated with The Boys' and Girls' Clubs Association of Hong Kong to organize a social event for people with disabilities</li>
+            <li>Documented meeting minutes and scheduled timetables to ensure that the event was carried out successfully</li>
+            <li>Cooperated with other group members to create icebreaker games for participants</li>
+            <li>Developed patient, flexible, and friendly communication skills through interacting with supervisors, coworkers, and participants having a wide range of backgrounds</li>
+            <li>Instructed participants in drawing simple shapes to ultimately form a picture leading to participants feeling proud of their artwork</li>
+        </ul>
+        <img src="pics/volunteer_program_pics.jpg" class="center">
+        <br>
+        <div class="volunteer_title">Peer Mentor</div>
+        <p class="align_left">Tak Sun Secondary School</p>
+        <p class="align_right">Sep. 2015 - Aug. 2018</p>
+        <div style="clear: both;"></div>
+        <ul>
+            <li>Helped new grade 7 student to easily adapt to the new environment by cooperating with other mentors to plan and design team games and activities for icebreaking</li>
+        </ul>
+        <br>
+        <div class="volunteer_title">Chief Prefect leader</div>
+        <p class="align_left">Tak Sun Secondary School</p>
+        <p class="align_right">Sep. 2018 - Aug. 2019</p>
+        <div style="clear: both;"></div>
+        <ul>
+            <li>
+                Make plans to associate discipline team for managing students by setting up rosters and constructing duty structure.
+            </li>
+            <li>
+                Associate school's activities, such as open day, by arranging prefects duty list
+            </li>
+        </ul>
+
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none"; 
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1;
+                } 
+                slides[slideIndex-1].style.display = "block"; 
+                setTimeout(showSlides, 3000);
+            }
+        </script>
     </body>
 </html>
