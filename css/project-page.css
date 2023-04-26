@@ -29,6 +29,7 @@
 }
   
 .card_face--back {
+    background: rgb(249, 251, 255);
     transform: rotateY(180deg);
 }
 
