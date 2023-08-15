@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script id="vertex-shader" type="x-shader/x-vertex">
+            attribute vec4 vPosition;
+            attribute vec3 color;
+            varying vec4 v_color;
+            void main(){
+                gl_Position = vPosition;
+                v_color = vec4(color, 1.0);
+            }
+        </script>
+        <script id="fragment-shader" type="x-shader/x-fragment"> 
+            precision mediump float;
+            varying vec4 v_color;
+            uniform bool dashed;
+            void main(){
+                if(dashed){
+                    float dashLength = 10.0; // Length of each dash
+                    float dashGap = 5.0; // Length of each gap between dashes
+
+                    float modValue = mod(gl_FragCoord.x + gl_FragCoord.y, dashLength + dashGap);
+                    if (modValue > dashLength) {
+                        discard; // Discard fragments to create gaps
+                    }
+                    else {
+                        gl_FragColor = v_color;
+                    }
+                }
+                else {
+                    gl_FragColor = v_color;
+                }
+            }
+        </script>
+        <script type="text/javascript" src="Common/webgl-utils.js"></script>
+        <script type="text/javascript" src="Common/initShaders.js"></script>
+        <script type="text/javascript" src="Common/MV.js"></script>
+        <script type="text/javascript" src="pacman.js"></script>
+        
+        <link rel = "stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="canvasContainer">
+            
+            <canvas id="gl-canvas">Oops ... your browser doesn't support the HTML5 canvas element</canvas>
+            <ul class="overlay">
+                <li class = "time_li"><span id="time"></span></li>
+                <li class = "score_li"><span id="score"></span></li>
+            </ul>
+        </div>
+    </body>
+</html>
