@@ -14,7 +14,7 @@ ul.navbar li{
     list-style: none;
     height: 48px;
     display: inline-block;
-    font-family: cursive;
+    font-family: 'Times New Roman', Times, serif;
 }
 ul.navbar li a{
     display: inline-block;
