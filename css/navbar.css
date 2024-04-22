@@ -45,3 +45,16 @@ ul.navbar li a:hover:after {
     width: 100%
 }
 .current { -webkit-text-fill-color:green; }
+
+@media (min-aspect-ratio: 16/9) {
+    video {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    video {
+        width: auto;
+        height: 100%;
+    }
+}
