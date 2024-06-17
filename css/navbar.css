@@ -5,14 +5,14 @@ header{
     text-align: center;
 }
 ul.navbar{
-    min-height: 48px;
+    min-height: 3vw;
     width: auto;
     text-align: center;
 }
 ul.navbar li{
     position: relative;
     list-style: none;
-    height: 48px;
+    height: 3vw;
     display: inline-block;
     font-family: 'Times New Roman', Times, serif;
 }
