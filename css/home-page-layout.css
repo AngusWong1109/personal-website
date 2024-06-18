@@ -15,8 +15,20 @@ body{
     text-align: center;
 }
 
+@media only screen and (max-width: 720px) {
+  	body{
+    	height: 100%;
+    	width: auto;
+    	background: #161415 url(../pics/background.jpg) no-repeat center;
+    	background-size:cover !important;
+    	overflow: hidden;
+    	text-align: center;
+  	} 
+}
+
 .clock{
     font-family: 'Orbitron', sans-serif;
+    max-width: 100%;
     font-size: 6vw;
     color: white;
     text-align: center;
