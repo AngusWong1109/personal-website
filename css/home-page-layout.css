@@ -7,23 +7,23 @@ header{
 }
 
 body{
-    height: auto;
-    width: 100%;
-    background: #161415 url(../pics/background.jpg) no-repeat center;
-    background-size:cover !important;
-    overflow: hidden;
-    text-align: center;
-}
+  height: 100%;
+  width: auto;
+  background: #161415 url(../pics/background.jpg) no-repeat center;
+  background-size:cover !important;
+  overflow: hidden;
+  text-align: center;
+} 
 
-@media only screen and (max-width: 720px) {
-  	body{
-    	height: 100%;
-    	width: auto;
+@media only screen and (min-width: 1024px) {
+	body{
+    	height: auto;
+    	width: 100%;
     	background: #161415 url(../pics/background.jpg) no-repeat center;
     	background-size:cover !important;
     	overflow: hidden;
     	text-align: center;
-  	} 
+  	}
 }
 
 .clock{
