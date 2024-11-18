@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/project-page.css">
         <link rel="stylesheet" href="css/font.css">
+        <script type="text/javascript" src="javascript/project.js"></script>
     </head>
     <body>
         <video autoplay muted loop id="bgvideo">
@@ -27,223 +28,220 @@
             <hr />
         </header>
         <h1 class="section_title">Technical Project Experience</h1>
-            
-            <ul class="cards_container">
-                <li>
-                    <div class="card">
-                        <div class="card_face card_face--front">
-                            <div class="card_title">
-                                Poker analyzer
-                            </div>
-                            <div class="container">
-                                <img src="pics/poker_analyzer_bg.jpg">
-                            </div>
-                        </div>
-                        <div class="card_face card_face--back">
-                            <div class="card_description">
-                                Tak Sun Secondary School<br>
-                                May. 2019 - Oct. 2020
-                                <dl>
-                                    <dd>
-                                        Used C language to design a card analyzer that works to analyze the pattern of a given hand for show-hand card game and to determine the winner by the given hand of cards and betting amount
-                                    </dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <a class = "link" style = "font-size: 18px"href="https://github.com/AngusWong1109/Poker-Analysis/tree/master/C_version">Link to Code</a>
-                </li>
-                <li>
-                    <div class="card">
-                        <div class="card_face card_face--front">
-                            <div class="card_title">
-                                Find the missing plane
-                            </div>
-                            <div class="container">
-                                <img src="pics/missing_plane_bg.png">
-                            </div>
-                        </div>
-                        <div class="card_face card_face--back">
-                            <div class="card_description">
-                                Simon Fraser University<br>
-                                Sep. 2022
-                                <dl>
-                                    <dd>
-                                        Used Java to design a score tracking application based on the board game, Lost Cities, which calculate and track the user score. It allows the user to add, display, edit and delete game record with provided android UI.
-                                    </dd>
-                                    <br>
-                                    <dd>
-                                        Used JUnit 5 to run test code by obtaining unit test and system test.
-                                    </dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <a class = "link" style = "font-size: 18px" href="https://github.com/AngusWong1109/Find-the-missing-plane">Link to Code</a>
-                </li>
-                <li>
-                    <div class="card">
-                        <div class="card_face card_face--front">
-                            <div class="card_title">Party game record system</div>
-                            <div class="container">
-                                <img src="pics/board_game_bg.jpg">
-                            </div>
-                        </div>
-                        <div class="card_face card_face--back">
-                            <div class="card_description">
-                                Simon Fraser University<br>
-                                Oct. 2022 - Dec. 2022
-                                <dl>
-                                    <dd>
-                                        Used Java to design a score system to store group players’ score, it will generate an achievement level according to the total group scores, scaling by “good score” and “bad score” provided by user. It can also store image for each game played and each game type.
-                                    </dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <a class = "link" style = "font-size: 18px" href="https://github.com/AngusWong1109/Board-Game-Score-Calculator">Link to Code</a>
-                </li>
-                <li>
-                    <div class="card">
-                        <div class="card_face card_face--front">
-                            <div class="card_title">Sentiment Analyzer</div>
-                            <div class="container">
-                                <img src="pics/reddit_logo.png">
-                            </div>
-                        </div>
-                        <div class="card_face card_face--back">
-                            <div class="card_description">
-                                Simon Fraser University<br>
-                                Jul. 2023 - Aug. 2023
-                                <dl>
-                                    <dd>
-                                        Used Python, Pyspark, Pandas to do analyze on reddit and weather data.
-                                    </dd>
-                                    <dd>
-                                        Performed data science technique to extract, transform, and load datasets.
-                                    </dd>
-                                    <dd>
-                                        Utilized different machine learning techniques to make a better prediction on the sentiment by the weather features.
-                                    </dd>
-                                    <dd>
-                                        Conducted different statistical test to explore relationship between datasets.
-                                    </dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <a class = "link" style = "font-size: 18px" href="https://github.com/AngusWong1109/Sentiment_Analyzer">Link to Code</a>
-                </li>
-            </ul>
 
-            <ul class="cards_container">
-                <li>
-                    <div class="card">
-                        <div class="card_face card_face--front">
-                            <div class="card_title">
-                                Pacman
-                            </div>
-                            <div class="container">
-                                <img src="pics/pacman.png">
-                            </div>
-                        </div>
-                        <div class="card_face card_face--back">
-                            <div class="card_description">
-                                Simon Fraser University<br>
-                                Jun. 2023 - Jul. 2023
-                                <dl>
-                                    <dd>
-                                        Used basic webgl technique to draw a pacman game.
-                                    </dd>
-                                    <br>
-                                    <dd>
-                                        Added time and score system to give the user have a more realistic experience.
-                                    </dd>
-                                </dl>
-                            </div>
+        <div class="timeline-container">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content" onclick="showDialog('FlightCast')">
+                    <div class="timeline-node"></div>
+                    <div class="project-title">FlightCast</div>
+                    <div class="project-date">Mar 2024 - Apr 2024</div>
+                    <p>FlightCast is a mobile application aim to help travellers to predict flight status for both departure and arrival flights.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Kotlin</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">MVVM</span>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content" onclick="showDialog('Screen Time Manager')">
+                    <div class="timeline-node"></div>
+                    <div class="project-title">Screen Time Manager</div>
+                    <div class="project-date">Nov 2023 - Dec 2023</div>
+                    <p>Screen Time Manager aims to combat mobile phone addiction.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Kotlin</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">MVVM</span>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content" onclick="showDialog('City day and night')">
+                        <div class="timeline-node"></div>
+                        <div class="project-title">City day and night</div>
+                        <div class="project-date">Aug 2023</div>
+                        <p>Created a simulated animation of a city, which will change from day to night.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Three.js</span>
+                            <span class="tech-tag">HTML</span>
                         </div>
                     </div>
-                    <br>
-                    <a class = "link" style = "font-size: 18px" href="pacman/index.html">Link to Website</a>
-                </li>
-                <li>
-                    <div class="card">
-                        <div class="card_face card_face--front">
-                            <div class="card_title">
-                                City day and night
-                            </div>
-                            <div class="container">
-                                <img src="city/render_image.png">
-                            </div>
-                        </div>
-                        <div class="card_face card_face--back">
-                            <div class="card_description">
-                                Simon Fraser University<br>
-                                Aug. 2023
-                                <dl>
-                                    <dd>
-                                        Used three.js to draw different component to form a city model
-                                    </dd>
-                                    <br>
-                                    <dd>
-                                        Added logic to make the city become more realistic.
-                                    </dd>
-                                </dl>
-                            </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content" onclick="showDialog('Sentiment Analyzer')">
+                        <div class="timeline-node"></div>
+                        <div class="project-title">Sentiment Analyzer</div>
+                        <div class="project-date">Jul 2023 - Aug 2023</div>
+                        <p>Sentiment Analyzer aims to analyse the relationship between subreddit post and weather.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit-Learn</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">PySpark</span>
+                            <span class="tech-tag">Data Analysis</span>
                         </div>
                     </div>
-                    <br>
-                    <a class = "link" style = "font-size: 18px" href="city/index.html">Link to Website</a>
-                </li>
-                <li>
-                    <div class="card">
-                        <div class="card_face card_face--front">
-                            <div class="card_title">
-                                Screentime manager
-                            </div>
-                            <div class="container">
-                                <img src="pics/goal.png">
-                            </div>
-                        </div>
-                        <div class="card_face card_face--back">
-                            <div class="card_description">
-                                Simon Fraser University<br>
-                                Nov. 2023 - Dec. 2023
-                                <dl>
-                                    <dd>
-                                        Used kotlin to build an android app.
-                                    </dd>
-                                    <br>
-                                    <dd>
-                                        Has implemented logic to handle usage from other apps
-                                    </dd>
-                                    <br>
-                                    <dd>
-                                        Has implemented add friend functions with firebase realtime database
-                                    </dd>
-                                </dl>
-                            </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content" onclick="showDialog('Pacman')">
+                        <div class="timeline-node"></div>
+                        <div class="project-title">Pacman</div>
+                        <div class="project-date">Jun 2023 - Jul 2022</div>
+                        <p>Created a pacman online game.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">WebGL</span>
+                            <span class="tech-tag">HTML</span>
                         </div>
                     </div>
-                    <br>
-                    <a class = "link" style = "font-size: 18px" href="https://github.com/salmanayazz/screen-time-manager">Link to Code</a>
-                    <br>
-                    <a class = "link" style = "font-size: 18px" href="https://sites.google.com/view/cmpt-362-screen-time-manager/home">Link to Website</a>
-                </li>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content" onclick="showDialog('Party game score system')">
+                        <div class="timeline-node"></div>
+                        <div class="project-title">Party game score system</div>
+                        <div class="project-date">Oct 2022 - Dec 2022</div>
+                        <p>Created an Android mobile app for recording party game's score.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Agile Methodology</span>
+                            <span class="tech-tag">Android Studio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content" onclick="showDialog('Find the missing plane')">
+                        <div class="timeline-node"></div>
+                        <div class="project-title">Find the missing plane</div>
+                        <div class="project-date">Sep 2022</div>
+                        <p>Created an Android mobile app for score tracking based on a board game, Lost Cities.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">JUnit5</span>
+                            <span class="tech-tag">Android Studio</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content" onclick="showDialog('Poker Analyzer')">
+                        <div class="timeline-node"></div>
+                        <div class="project-title">Poker Analyzer</div>
+                        <div class="project-date">May 2019 - Oct 2020</div>
+                        <p>Created show hand computer poker game.</p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">C</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="FlightCast" class="dialog">
+            <button class="close-button" onclick="hideDialog('FlightCast')">X</button>
+            <h2>FlightCast</h2>
+            <p class="project-date">Mar 2024 - Apr 2024</p>
+            <p>FlightCast is a mobile application aim to help travellers to predict flight status for both departure and arrival flights.</p>
+            <ul>
+                <li>Created Android mobile application random forests classifier using Kotlin and Python.</li>
+                <li>Implemented a random forests classifier for predicting flight status based on weather conditions, increased accuracy by 20%.</li>
+                <li>Used ETL method for fetching weather and flight status data, and transforming it for training data usage.</li>
             </ul>
-            
-            <h1 class="section_title">MORE COMING ON!</h1>
-            <script>
-                var cards = document.querySelectorAll('.card'); 
-                [...cards].forEach((card)=>{
-                    card.addEventListener( 'click', function() {
-                        card.classList.toggle('is-flipped');
-                    });
-                });
-            </script>
+        </div>
+        
+        <div id="Screen Time Manager" class="dialog">
+            <button class="close-button" onclick="hideDialog('Screen Time Manager')">X</button>
+            <h2>Screen Time Manager</h2>
+            <p class="project-date">Nov 2023 - Dec 2023</p>
+            <p>Screen Time Manager aims to combat mobile phone addiction.</p>
+            <ul>
+                <li>Created a Screen Time Manager app using Kotlin, coroutine, and Firebase.</li>
+                <li>Implemented 40% of the app functionalities, including functionalities involving peer competition, adding friends, and notification features.</li>
+            </ul>
+        </div>
+
+        <div id="City day and night" class="dialog">
+            <button class="close-button" onclick="hideDialog('City day and night')">X</button>
+            <h2>City day and night</h2>
+            <p class="project-date">Aug 2023</p>
+            <p>Created a simulated animation of a city, which will change from day to night.</p>
+            <ul>
+                <li>Used Three.js to draw different component of the city.</li>
+                <li>Added different logic, such as car movement, light movement to make the simulation more realistic.</li>
+            </ul>
+        </div>
+
+        <div id="Sentiment Analyzer" class="dialog">
+            <button class="close-button" onclick="hideDialog('Sentiment Analyzer')">X</button>
+            <h2>Sentiment Analyzer</h2>
+            <p class="project-date">Jul 2023 - Aug 2023</p>
+            <p>Sentiment Analyzer aims to analyse the relationship between subreddit post and weather.</p>
+            <ul>
+                <li>Used ETL method to extract subreddit and weather historical data, and transform it for analyzing usage.</li>
+                <li>Used linear regression, Chi-square test, ANOVA test, polynomial regression, U test for analysis, increased 80% reliability for the analysis report.</li>
+            </ul>
+        </div>
+
+        <div id="Pacman" class="dialog">
+            <button class="close-button" onclick="hideDialog('Pacman')">X</button>
+            <h2>Pacman</h2>
+            <p class="project-date">Jun 2023 - Jul 2023</p>
+            <p>Created a pacman onlien game.</p>
+            <ul>
+                <li>Used basic WebGL technique to draw different componenets of the pacman game.</li>
+                <li>Used JavaScript to apply logic of the game.</li>
+                <li>Added time and score system to give the user have a more exciting experience.</li>
+            </ul>
+        </div>
+
+        <div id="Party game score system" class="dialog">
+            <button class="close-button" onclick="hideDialog('Party game score system')">X</button>
+            <h2>Party game score system</h2>
+            <p class="project-date">Oct 2022 - Dec 2022</p>
+            <p>Created an Android mobile app for recording party game's score.</p>
+            <ul>
+                <li>Implemented 30% functionality of the app which included adding a score system by generating an acheivement level to the user.</li>
+                <li>Created the Android application by using Java and Android Studio.</li>
+                <li>Used Agile Methodology throughout the whole project. </li>
+            </ul>
+        </div>
+
+        <div id="Find the missing plane" class="dialog">
+            <button class="close-button" onclick="hideDialog('Find the missing plane')">X</button>
+            <h2>Find the missing plane</h2>
+            <p class="project-date">Sep 2022</p>
+            <p>Created an Android mobile app for score tracking based on a board game, Lost Cities.</p>
+            <ul>
+                <li>Used Java to design a score tracking application which calculate and track the user score.</li>
+                <li>Created the Android application by using Java and Android Studio.</li>
+                <li>Used JUnit 5 to run test code by obtaining unit test and system test.</li>
+            </ul>
+        </div>
+
+        <div id="Poker Analyzer" class="dialog">
+            <button class="close-button" onclick="hideDialog('Poker Analyzer')">X</button>
+            <h2>Poker Analyzer</h2>
+            <p class="project-date">May 2019 - Oct 2020</p>
+            <p>Created show hand computer poker game.</p>
+            <ul>
+                <li>Used C language to design a card analyzer to analyze the pattern of a given hand for show-hand card game.</li>
+                <li>Fully implemented the game with the game logic and added a betting system.</li>
+            </ul>
+        </div>
+        
+        <!-- Remaining dialog templates follow the same pattern -->
+        <div class="overlay" onclick="hideAllDialogs()"></div>
+        
+        <h1 class="section_title">MORE COMING ON!</h1>
     </body>
 </html>
